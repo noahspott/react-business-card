@@ -1,5 +1,4 @@
 import React from 'react'
-import './App.css'
 import Header from './components/Header'
 import Contact from './components/Contact'
 import About from './components/About'
