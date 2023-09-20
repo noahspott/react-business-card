@@ -33,3 +33,58 @@ body {
 .header--logo {
   width: 40px;
 }
+
+.contact-container {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: auto auto;
+  background-color: var(--off-white);
+
+  padding: 10%;
+
+  align-items: center;
+}
+
+.contact-button-section {
+  display: grid;
+}
+
+.contact-container > button {
+  margin: 10px;
+}
+
+#contact-button {
+  margin: 20px 0 0 2px;
+  width: 100px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: var(--blue-1);
+  color: white;
+
+  font-size: 16px;
+}
+
+#contact-text {
+  color: var(--blue-2);
+}
+
+h1 {
+  font-size: 5vw;
+  font-weight: lighter;
+  margin: 0;
+}
+
+.circle {
+  width: 250px; /* Set the width and height to create a fixed-size circle */
+  height: 250px;
+  overflow: hidden; /* Hide any content that extends beyond the circle */
+  border-radius: 50%; /* Make it a circle */
+  position: relative; /* Needed for absolute positioning of children */
+  animation: wobble 2s ease-in-out infinite; /* Apply the animation */
+}
+
+.circle img {
+  width: 100%; /* Ensure the image takes up the entire container */
+  height: auto; /* Maintain the image's aspect ratio */
+}
