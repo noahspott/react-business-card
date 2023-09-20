@@ -11,7 +11,9 @@ export default function Contact(){
                     <button id='contact-button'>CONTACT</button>
                 </div>
 
-                <img className='circle' src="src/assets/noah-bust.jpg" alt="Noah Photo" />
+                <div id='circle-container'>
+                    <img className='circle' src="src/assets/noah-bust.jpg" alt="Noah Photo" />
+                </div>
 
             </section>
         </>

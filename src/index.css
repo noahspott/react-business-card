@@ -75,16 +75,32 @@ h1 {
   margin: 0;
 }
 
+@keyframes shadowMove {
+  0% {
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.5); /* Initial shadow position */
+  }
+  50% {
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5); /* Move right */
+  }
+  100% {
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.5); /* Return to initial position */
+  }
+}
+
 .circle {
-  width: 250px; /* Set the width and height to create a fixed-size circle */
+  width: 250px;
   height: 250px;
-  overflow: hidden; /* Hide any content that extends beyond the circle */
-  border-radius: 50%; /* Make it a circle */
-  position: relative; /* Needed for absolute positioning of children */
-  animation: wobble 2s ease-in-out infinite; /* Apply the animation */
+  overflow: hidden;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: var(--off-white);
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25); /* Initial shadow position */
+  position: relative;
+  animation: wobble 4s ease-in-out infinite, shadowMove 8s linear infinite; /* Apply both animations */
 }
 
 .circle img {
-  width: 100%; /* Ensure the image takes up the entire container */
-  height: auto; /* Maintain the image's aspect ratio */
+  width: 100%;
+  height: auto;
 }
+
