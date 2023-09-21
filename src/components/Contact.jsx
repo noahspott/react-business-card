@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Contact(){
     return(
-        <>
+        <div id='contact-background'>
             <section className='contact-container'>
 
                 <div className='contact-button-section'>
@@ -11,11 +11,11 @@ export default function Contact(){
                     <button id='contact-button'>CONTACT</button>
                 </div>
 
-                <div id='circle-container'>
-                    <img className='circle' src="src/assets/noah-bust.jpg" alt="Noah Photo" />
-                </div>
+                
+                <img className='circle' src="src/assets/noah-bust.jpg" alt="Noah Photo" />
+                
 
             </section>
-        </>
+        </div>
     )
 }
