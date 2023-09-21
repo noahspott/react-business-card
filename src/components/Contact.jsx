@@ -10,11 +10,9 @@ export default function Contact(){
                     <h1 id='contact-text'>Freelance Developer</h1>
                     <button id='contact-button'>CONTACT</button>
                 </div>
-
-                
+    
                 <img className='circle' src="src/assets/noah-bust.jpg" alt="Noah Photo" />
-                
-
+            
             </section>
         </div>
     )
