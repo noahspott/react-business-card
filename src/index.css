@@ -11,30 +11,40 @@
   font-family: 'Inter', sans-serif;
 }
 
-.header--nav {
+h1 {
+  font-size: 1.5em;
+  font-weight: lighter;
+  white-space: nowrap;
+}
+
+h3 {
+  font-size: 1em;
+}
+
+.header-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1% 5% 1% 5%;
+  padding: 1em;
   background-color: black;
   color: white;
 
   box-shadow: 0 4px 4px 0 rgb(0, 0, 0, 0.25);
 }
 
-.header--name {
-  font-size: 24px;
+.header-name {
+  font-size: 1em;
   font-weight: 100;
 }
 
 #header-container-logo {
   display: grid;
   grid-template-columns: auto auto;
-  grid-gap: 5px;
+  grid-gap: 1em;
 }
 
 .header-logo {
-  width: 2rem;
+  width: 1.5em;
 }
 
 #contact-background {
@@ -44,13 +54,9 @@
 
 .contact-container {
   display: grid;
-  /* grid-template-rows: auto; */
-
   padding: 10%;
-
   justify-items: center;
   align-items: center;
-
   max-width: 832px;
 }
 
@@ -75,11 +81,6 @@
 
 #contact-text {
   color: var(--blue-2);
-}
-
-h1 {
-  font-size: 1.5rem;
-  font-weight: lighter;
 }
 
 .circle {
@@ -114,13 +115,8 @@ h1 {
 @media only screen and (min-width: 768px){
   .contact-container {
     display: grid;
-    /* grid-template-rows: auto; */
     grid-template-columns: auto auto;
-  
-    /* padding: 10%; */
-  
-    /* max-width: 832px; */
-    /* overflow: auto; */
+    grid-gap: 2em;
   }
 
   h1 {
@@ -131,7 +127,6 @@ h1 {
   .circle {
     width: 15rem;
     height: 15rem;
-    /* overflow: hidden; */
     border-radius: 50%;
     border-style: solid;
     border-color: var(--off-white);
