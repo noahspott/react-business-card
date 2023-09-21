@@ -5,7 +5,10 @@ export default function Header(){
         <>
             <nav className='header--nav'>
                 <h3 className='header--name'>NOAH SPOTT</h3>
-                <img className='header--logo' src="src/assets/li-logo.png" alt="LinkedIn Logo" />
+                <div id='header-container-logo'>
+                    <img className='header-logo' src="src/assets/li-logo.png" alt="LinkedIn Logo" />
+                    <img className='header-logo' src="src/assets/github-mark-white.png" alt="GitHub Logo" />
+                </div>
             </nav>
         </>
     )
