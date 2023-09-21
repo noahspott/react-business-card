@@ -11,6 +11,10 @@
   font-family: 'Inter', sans-serif;
 }
 
+#root {
+  min-width: 320px;
+}
+
 h1 {
   font-size: 1.5em;
   font-weight: lighter;
@@ -20,6 +24,10 @@ h1 {
 h3 {
   font-size: 1em;
 }
+
+/********************/
+/* HEADER COMPONENT */
+/********************/
 
 .header-nav {
   display: flex;
@@ -46,6 +54,10 @@ h3 {
 .header-logo {
   width: 1.5em;
 }
+
+/*********************/
+/* CONTACT COMPONENT */
+/*********************/
 
 #contact-background {
   margin: 0;
@@ -111,7 +123,44 @@ h3 {
   }
 }
 
-/* Big Screen */
+/********************/
+/* ABOUT COMPONENT  */
+/********************/
+
+#about-container {
+  display: grid;
+  grid-gap: 2em;
+  justify-content: center;
+}
+
+.about-column {
+  display: grid;
+  /* justify-content: center; */
+  margin-top: 1em;
+}
+
+.about-column h2, .about-column h3 {
+  font-size: large;
+  color: var(--blue-2);
+  letter-spacing: 5px;
+  margin-bottom: 0.75em;
+}
+
+.about-column h3 {
+  color: var(--blue-1);
+}
+
+.about-column ul {
+  margin-left: 1.4em;
+}
+
+.about-column p, .about-column ul {
+  font-size: 14px;
+}
+
+/**************/
+/* BIG SCREEN */
+/**************/
 @media only screen and (min-width: 768px){
   .contact-container {
     display: grid;
@@ -147,5 +196,12 @@ h3 {
     color: white;
   
     font-size: 16px;
+  }
+
+  #about-container {
+    display: grid;
+    grid-gap: 4em;
+    justify-content: center;
+    grid-template-columns: auto auto;
   }
 }
