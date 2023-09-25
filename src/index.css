@@ -68,7 +68,7 @@ h3 {
 
 .contact-container {
   display: grid;
-  padding: 10%;
+  padding: 5% 2em 5% 2em;
   justify-items: center;
   align-items: center;
   max-width: 832px;
@@ -133,10 +133,12 @@ h3 {
   display: grid;
   grid-gap: 2em;
   justify-content: center;
+  padding: 1em 10% 1em 10%;
 }
 
 .about-column {
-  display: grid;
+  /* display: flex; */
+  flex-direction: column;
   /* justify-content: center; */
   margin-top: 1em;
 }
@@ -158,6 +160,20 @@ h3 {
 
 .about-column p, .about-column ul {
   font-size: 14px;
+}
+
+/*********************/
+/* FOOTER COMPONENT  */
+/*********************/
+
+#footer-container {
+  display: flex;
+  justify-content: center;
+  color: white;
+  background-color: black;
+  margin-top: 4em;
+  padding: 2em;
+  font-size: small;
 }
 
 /**************/
@@ -190,14 +206,14 @@ h3 {
     position: relative;
     left: 0;
     margin: 10px 0 10px 0;
-    width: 50%;
+    width: 40%;
     padding: 10px;
     border-radius: 5px;
     border: none;
     background-color: var(--blue-1);
     color: white;
-  
     font-size: 16px;
+    letter-spacing: 5px;
   }
 
   #about-container {
@@ -205,5 +221,27 @@ h3 {
     grid-gap: 4em;
     justify-content: center;
     grid-template-columns: auto auto;
+  }
+
+  .about-column h2, .about-column h3 {
+    font-size: 2em;
+    font-weight: 300;
+    color: var(--blue-2);
+    letter-spacing: 5px;
+    margin-bottom: 0.75em;
+  }
+
+  .about-column h4 {
+    font-size: 1.3em;
+    white-space: nowrap;
+  }
+
+  .about-column h3 {
+    color: var(--blue-1);
+  }
+
+  .about-column p, .about-column ul {
+    font-size: 1.25em;
+    white-space: nowrap;
   }
 }

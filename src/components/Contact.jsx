@@ -1,4 +1,5 @@
 import React from 'react'
+import noahPhoto from '../assets/noah-bust.jpg'
 
 export default function Contact(){
     return(
@@ -11,7 +12,7 @@ export default function Contact(){
                     <button id='contact-button'>CONTACT</button>
                 </div>
     
-                <img className='circle' src="src/assets/noah-bust.jpg" alt="Noah Photo" />
+                <img className='circle' src={noahPhoto} alt="Noah Photo" />
             
             </section>
         </div>

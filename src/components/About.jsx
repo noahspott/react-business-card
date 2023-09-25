@@ -17,18 +17,20 @@ export default function About(){
                     <li>Git</li>
                 </ul>
             </div>
-            <div className='about-column'>
+            <div className='about-column' id='about-education'>
                 <h3>EDUCATION</h3>
                 <div>
-                    <h4>B.S. Software Engineering</h4>
-                    <p>The Pennsylvania State University</p>
-                    <p>Class of 2023</p>
-                    <br></br>
-                </div>
-                <div>
-                    <h4>A.A.S. Music Recording Technology</h4>
-                    <p>Luzerne County Community College</p>
-                    <p>Class of 2014</p>
+                    <div>
+                        <h4>B.S. Software Engineering</h4>
+                        <p>The Pennsylvania State University</p>
+                        <p>Class of 2023</p>
+                        <br></br>
+                    </div>
+                    <div>
+                        <h4>A.A.S. Music Recording Technology</h4>
+                        <p>Luzerne County Community College</p>
+                        <p>Class of 2014</p>
+                    </div>
                 </div>
 
             </div>
