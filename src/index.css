@@ -79,6 +79,10 @@ h3 {
   align-items: center;
 }
 
+.contact-button-section > h1 {
+  /* font-family: Monaco, monospace; */
+}
+
 #contact-button {
   position: relative;
   left: 25%;
@@ -100,10 +104,11 @@ h3 {
 .circle {
   width: 10rem;
   height: 10rem;
+  margin: 2em;
   overflow: hidden;
   border-radius: 50%;
   border-style: solid;
-  border-color: var(--off-white);
+  border-color: var(--off-black);
   box-shadow: 10px 10px 10px rgba(255, 255, 255, 0.25); /* Initial shadow position */
   animation: shadowMove 8s ease-in-out infinite; /* Apply both animations */
 }
@@ -217,12 +222,6 @@ h3 {
   .circle {
     width: 15rem;
     height: 15rem;
-    border-radius: 50%;
-    border-style: solid;
-    border-color: var(--off-white);
-    box-shadow: 10px 10px 10px rgba(255, 255, 255, 0.25); /* Initial shadow position */
-    position: relative;
-    animation: shadowMove 8s ease-in-out infinite; /* Apply both animations */
   }
 
   #contact-button {
