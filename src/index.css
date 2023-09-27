@@ -68,20 +68,22 @@ h3 {
 
 .contact-container {
   display: grid;
+  margin: 2.5em;
   padding: 5% 2em 5% 2em;
+  border-style: solid;
+  border-radius: 4px;
+  border-color: var(--off-black);
+  background-color: white;
+  box-shadow: 4px 4px 2px 1px rgb(0, 0, 0, 0.15);
   justify-items: center;
   align-items: center;
   max-width: 832px;
 }
 
-.contact-button-section {
+/* .contact-button-section {
   display: grid;
   align-items: center;
-}
-
-.contact-button-section > h1 {
-  /* font-family: Monaco, monospace; */
-}
+} */
 
 #contact-button {
   position: relative;
@@ -138,7 +140,6 @@ h3 {
   display: grid;
   grid-gap: 2em;
   align-items: start;
-  /* justify-content: center; */
   padding: 1em 10% 1em 10%;
 }
 
@@ -188,6 +189,27 @@ h3 {
 #technology-icon {
   margin: 0.5em;
   font-size: 30px;
+}
+
+/************************/
+/* EDUCATION COMPONENT  */
+/************************/
+
+#education-container {
+  margin: 1em 0;
+  padding: 0.75em;
+  background-color: var(--off-white);
+  border-style: solid;
+  border-radius: 4px;
+  box-shadow: 1px 1px 2px 1px rgb(0, 0, 0, 0.25);
+}
+
+#education-container > p {
+  font-size: 13px;
+}
+
+#education-container > ul {
+  padding: 1em;
 }
 
 /*********************/
