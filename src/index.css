@@ -7,6 +7,7 @@
   --off-white: #F6F1F1;
   --blue-1: #146C94;
   --blue-2: #19A7CE;
+  --off-black: rgb(32, 31, 7);
 
   font-family: 'Inter', sans-serif;
 }
@@ -34,9 +35,8 @@ h3 {
   justify-content: space-between;
   align-items: center;
   padding: 1em;
-  background-color: black;
+  background-color: var(--off-black);
   color: white;
-
   box-shadow: 0 4px 4px 0 rgb(0, 0, 0, 0.25);
 }
 
@@ -132,20 +132,23 @@ h3 {
 #about-container {
   display: grid;
   grid-gap: 2em;
-  justify-content: center;
+  align-items: start;
+  /* justify-content: center; */
   padding: 1em 10% 1em 10%;
 }
 
 .about-column {
-  /* display: flex; */
+  display: flex;
   flex-direction: column;
-  /* justify-content: center; */
+  align-items: center;
+  justify-content: center;
   margin-top: 1em;
 }
 
 .about-column h2, .about-column h3 {
   font-size: large;
-  color: var(--blue-2);
+  font-weight: 100;
+  color: black;
   letter-spacing: 5px;
   margin-bottom: 0.75em;
 }
@@ -154,12 +157,32 @@ h3 {
   color: var(--blue-1);
 }
 
-.about-column ul {
-  margin-left: 1.4em;
-}
-
 .about-column p, .about-column ul {
   font-size: 14px;
+}
+
+/*************************/
+/* TECHNOLOGY COMPONENT  */
+/*************************/
+
+#technology-container {
+  font-family: Monaco, monospace;
+  text-transform: lowercase;
+  display: flex;
+  align-items: center;
+  background-color: var(--blue-2);
+  box-shadow: 1px 1px 2px 1px rgb(0, 0, 0, 0.25);
+  border-style: solid;
+  border-color: rgb(32, 31, 7);
+  border-radius: 4px;
+  padding: 0.25em 1.5em;
+  margin: 1em 1em;
+  color: white;
+}
+
+#technology-icon {
+  margin: 0.5em;
+  font-size: 30px;
 }
 
 /*********************/
@@ -170,7 +193,7 @@ h3 {
   display: flex;
   justify-content: center;
   color: white;
-  background-color: black;
+  background-color: rgb(32, 31, 7);
   margin-top: 4em;
   padding: 2em;
   font-size: small;
@@ -226,7 +249,6 @@ h3 {
   .about-column h2, .about-column h3 {
     font-size: 2em;
     font-weight: 300;
-    color: var(--blue-2);
     letter-spacing: 5px;
     margin-bottom: 0.75em;
   }
@@ -241,7 +263,7 @@ h3 {
   }
 
   .about-column p, .about-column ul {
-    font-size: 1.25em;
+    font-size: 1em;
     white-space: nowrap;
   }
 }
