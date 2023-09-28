@@ -6,21 +6,11 @@ import data from '../data'
 export default function About(){
 
     const technologyElements = data.technology.map((tech) =>
-        <Technology 
-            key={tech.id}
-            name={tech.name}
-            iconClass={tech.iconClass}
-        />
+        <Technology {...tech}/>
     )
 
     const educationElements = data.education.map((edu) =>
-        <Education 
-            key={edu.id}
-            degreeName={edu.degreeName}
-            schoolName={edu.schoolName}
-            dateCompleted={edu.dateCompleted}
-            skills={edu.skills}
-        />
+        <Education {...edu}/>
     )
 
     return(
