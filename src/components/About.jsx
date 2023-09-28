@@ -7,6 +7,7 @@ export default function About(){
 
     const technologyElements = data.technology.map((tech) =>
         <Technology 
+            key={tech.id}
             name={tech.name}
             iconClass={tech.iconClass}
         />
@@ -14,6 +15,7 @@ export default function About(){
 
     const educationElements = data.education.map((edu) =>
         <Education 
+            key={edu.id}
             degreeName={edu.degreeName}
             schoolName={edu.schoolName}
             dateCompleted={edu.dateCompleted}

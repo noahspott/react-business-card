@@ -10,7 +10,7 @@ export default function Education(props){
             <p>Completed: {props.dateCompleted}</p>
             <ul>
                 {skillList.map((skill, index) => (
-                    <li key="index">{skill}</li>
+                    <li key={index}>{skill}</li>
                 ))}
             </ul>
         </div>
