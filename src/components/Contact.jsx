@@ -1,5 +1,7 @@
 import React from 'react'
 import noahPhoto from '../assets/noah-bust.jpg'
+import ContactForm from './ContactForm'
+
 
 export default function Contact(){
     return(
@@ -14,6 +16,8 @@ export default function Contact(){
                 <img className='circle' src={noahPhoto} alt="Noah Photo" />
             
             </section>
+
+            {/* <ContactForm /> */}
         </div>
     )
 }
