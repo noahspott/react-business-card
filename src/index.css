@@ -105,6 +105,13 @@ h3 {
   color: var(--blue-2);
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem
+  
+}
+
 .circle {
   width: 9rem;
   height: 9rem;
